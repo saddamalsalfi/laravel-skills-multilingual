@@ -1,0 +1,31 @@
+{
+  "name": "laravel-multilingual",
+  "displayName": "Laravel Multilingual Implementation & Localization",
+  "version": "1.0.0",
+  "description": "Comprehensive agent workflow and Cursor rule for configuring multi-language support in Laravel, including locale-aware URLs, translation catalogs, JSON Eloquent models, and Filament admin panels.",
+  "author": "Saddam Al-Slfi",
+  "homepage": "https://github.com/saddamalsalfi/laravel-skills-multilingual",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saddamalsalfi/laravel-skills-multilingual.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "localization",
+    "multilingual",
+    "i18n",
+    "l10n",
+    "filament",
+    "cursor-rules",
+    "open-plugins",
+    "ai-agents",
+    "php"
+  ],
+  "skills": [
+    "skills/laravel-multilingual/SKILL.md"
+  ],
+  "rules": [
+    "rules/laravel-multilingual.mdc"
+  ]
+}
