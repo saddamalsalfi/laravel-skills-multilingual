@@ -45,6 +45,9 @@ This skill guides the AI coding assistant through:
 │       └── SKILL.md                 # Agent skill for Antigravity, Claude Code, etc.
 ├── rules/
 │   └── laravel-multilingual.mdc     # Optimized rule for Cursor IDE
+├── server.py                        # Universal FastMCP executable server
+├── requirements.txt                 # Pinned dependencies for MCP runtime
+├── Dockerfile                       # Multi-platform OCI rootless container
 ├── mcp.json                         # Model Context Protocol configuration
 ├── plugin.json                      # Open Plugins manifest
 ├── LICENSE                          # MIT License with explicit AI Agent Grant
@@ -72,6 +75,27 @@ curl -o .agents/skills/laravel-multilingual/SKILL.md https://raw.githubuserconte
 ### 3. Open Plugins CLI
 ```bash
 open-plugins install https://github.com/saddamalsalfi/laravel-skills-multilingual
+```
+
+### 4. Universal Executable MCP Server (Claude Desktop, Cursor, Smithery)
+This skill runs natively as an executable Model Context Protocol (MCP) server exposing resources (`skill://content`) and tools (`get_guidelines`):
+
+**Claude Desktop Configuration (`claude_desktop_config.json`):**
+```json
+{
+  "mcpServers": {
+    "laravel-skills-multilingual": {
+      "command": "python",
+      "args": ["/path/to/laravel-skills-multilingual/server.py"]
+    }
+  }
+}
+```
+
+**Docker Container Run:**
+```bash
+docker build -t laravel-skills-multilingual .
+docker run -i --rm laravel-skills-multilingual
 ```
 
 ---
