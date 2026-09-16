@@ -11,6 +11,7 @@ created_at: "2026-09-12"
 
 # Laravel Multilingual Implementation & Localization 🌐🐘
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22781033.svg)](https://doi.org/10.5281/zenodo.22781033)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Open Plugins Compliant](https://img.shields.io/badge/Open%20Plugins-Compliant-success.svg)](https://open-plugins.com)
 [![Cursor Rule](https://img.shields.io/badge/Cursor%20Rule-.mdc-purple.svg)](rules/laravel-multilingual.mdc)
